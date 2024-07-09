@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Hello World</title>
+</head>
+
+<body>
+  <div id="react-app"></div>
+  <div id="vanilla-app"></div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script>
+    const reactHeading = React.createElement('h1', null, 'Hello from React');
+    console.log(reactHeading); // объект JavaScript
+    const container = document.getElementById('react-app');
+    const root = ReactDOM.createRoot(container); // метод объекта ReactDOM - монтируем компонент реакт в html-страницу
+    root.render(reactHeading); // смотировали компонент в реальный ДОМ = рендер внутри корневого элемента
+  </script>
+
+  <script>
+    const vanillaJsHeading = document.createElement('h1');
+    vanillaJsHeading.textContent = 'Hello from Vanilla JavaScript';
+    console.log(vanillaJsHeading); // элемент html
+    document.getElementById('vanilla-app').append(vanillaJsHeading); // помещение элемента без использования ReactDOM
+  </script>
+</body>
+
+</html>
