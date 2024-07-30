@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+/* правило, которое используется по умолчанию */
+.active {
+  color: orange;
+  text-decoration: none;
+}
+
+/* класс, который добавляется в коде руками через: */
+/* className={ ( { isActive } ) => isActive ? 'activeLink' : 'link'} */
+.activeLink {
+  color: orange;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  font-size: 30px;
+}
+
+nav {
+  background: grey;
+}
+
+nav a {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 90px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px;
+  font-size: 30px;
+  border: 0;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
