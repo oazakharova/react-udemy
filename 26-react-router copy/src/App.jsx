@@ -7,7 +7,6 @@ import Contacts from './components/Contacts';
 import NotFound from './components/NotFound';
 import MainLayout from './layouts/MainLayout';
 import Courses from './components/Courses';
-import SingleCourse from './components/SingleCourse';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
             <Route path="courses" element={<Courses />} />
-            <Route path="courses/:courseSlug" element={<SingleCourse />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
